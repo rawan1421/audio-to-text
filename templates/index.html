@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="/static/main.css">
+<script src="/static/recorder.js"></script>
+<script src="/static/audiodisplay.js"></script>
+<script src="/static/main.js"></script>
+<script src="/static/recorderWorker.js"></script>
+
+</head>
+    <body style="">
+
+    <div id="loader">
+        <div class="row " style="position:relative;">
+            <p style="">تحويل الصوت الى نص</p>
+
+            <div class="column1">
+                <h2>تسجيل الصوت</h2>
+                    <p>
+                        <button id="start" class="btn btn-success" onclick="startRecording()" disabled>بدء</button>
+                        <button id="stop" class="btn btn-danger" onclick="stopRecording()" disabled>إنهاء</button>
+                    </p>
+            </div>
+            <div class="column2" >
+                <h2>النص المتوقع</h2>
+                <p id="output" style="font-size: 20px;"></p>
+
+
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>
